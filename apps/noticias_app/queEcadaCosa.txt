@@ -1,0 +1,10 @@
+va a tener todos la info sobre la base de datos
+
+se relaciona con el archivo models.py
+
+models va a ser el que contiene las clases que permiten al orm de django para convertir las clases en tablas de la base de datos.
+
+views.py: se definen funciones que relacionan con templates html para mostrar la información
+template llama al archivo, views se conecta al resto de archivos 
+
+migración: mecanismo por el cual django transforma esas clases a tablas

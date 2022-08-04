@@ -1,0 +1,8 @@
+funciones:
+noticias
+eventos
+login
+
+quienes somos: planteado como html -> en templates
+
+así como se crea el proyecto se ejecuta otro comando

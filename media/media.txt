@@ -1,0 +1,3 @@
+Archivos: img, video, gif 
+que se generan de manera dinámica
+ej: cuando se carga una noticia, las fotos que tenga se guardan acá

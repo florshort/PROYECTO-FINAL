@@ -1,0 +1,4 @@
+Archivos: img, videos, gif etc que necesita la pág para cargarse adecuadamente
+
+Header, íconos, logos, fondos etc
+quiénes somos etc
