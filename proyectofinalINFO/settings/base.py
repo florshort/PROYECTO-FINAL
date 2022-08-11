@@ -18,8 +18,8 @@ import sys # librerías del sistema op que me permiten definir/modificar rutas d
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-#BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #busca dónde está la carpeta del proyecto dentro de cualquier compu
 
@@ -39,6 +39,9 @@ ALLOWED_HOSTS = []
 #También redefinida en producción, URLs/dominio del sitio
 
 # Application definition
+AUTH_USER_MODEL = "usuario_app.Usuario"
+LOGIN_URL = '/login' 
+LOGIN_REDIRECT_URL = '../'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -48,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.noticias_app',
+    'apps.usuario_app',
     # Agregar aplicación BLOG/EVENTOS para poder trabajar con esa app
 ]
 

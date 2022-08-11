@@ -7,7 +7,7 @@ class Categoria(models.Model):
     nombre = models.CharField(max_length=100)
 
 class Noticia(models.Model):
-    autor = models.ForeignKey('auth.User', on_delete = models.CASCADE)
+    autor = models.ForeignKey('usuario_app.Usuario', on_delete = models.CASCADE)
     titulo = models.CharField(max_length=255)
     contenido = models.TextField()
     img = models.ImageField(null=True, blank=True, help_text='Seleccione una imagen para mostrar') #carpeta img/noticias  uploade_to = 'img/noticias',
@@ -20,19 +20,19 @@ class Noticia(models.Model):
         self.publicado = datetime.now()
         self.save()
 
-    def comentariosAprobados(self):
-        return self.comentario.filter(aprobado=True)  
+    #def comentariosAprobados(self):
+    #    return self.comentarios.filter(aprobado=True)  
 
 # cuando se crea una nueva tabla acá, ejecutar py manage.py makemigrations noticias_app 
 # luego py manage.py migrate
 
 class Comentarios(models.Model):
     noticia = models.ForeignKey('Noticia', related_name = 'comentarios', on_delete=models.CASCADE)
-    autor = models.ForeignKey('auth.User', on_delete = models.CASCADE)
+    autor = models.ForeignKey('usuario_app.Usuario', on_delete = models.CASCADE)
     cuerpo_comentario = models.TextField()
     creado = models.DateTimeField(default=timezone.now)
     aprobado = models.BooleanField(default=False)
     
     def aprobarComentario(self):
         self.aprobado = True
-        self.save()
+        self.save() 

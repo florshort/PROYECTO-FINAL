@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 50;
+    float: unset;
+}
+
+/* Header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px;
+
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/*Headerlogo*/
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-right:0px;
+    left: 0;
+    top: 0;
+    float: left;
+}
+
+.logo img{
+    width: 10%;  
+    align-items: center;
+}
+
+/*Headermenu */
+menu{
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.menu-link{
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 40;
+    padding-right: 40px;
+    
+}
+
+/*Headerbotones */
+button{
+    padding: 10px 20px ;
+    border-radius: 30px;
+    text-align: center;
+}
+.menu-link button{
+    background-color: #41CBF6;
+    border: #41CBF6;
+    color: #FFFFFF;
+}
+.botoneslogin button{
+    background: #FFFFFF;
+    border: 2px solid #000000;
+
+}
+
+
+/* Footer*/
+
+footer{
+    display: flex;
+    background-color: #9B9EE2;
+    justify-content: space-between;
+    color: #FFFFFF;
+    
+}
+
+
+
+
