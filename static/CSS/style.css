@@ -1,9 +1,10 @@
 body{
     margin: 0;
+    background-color: #FFFFFF;
 }
 
 h1{
-    font-size: 50;
+    font-size: 70;
     float: unset;
 }
 
@@ -12,8 +13,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    padding: 10px;
+    min-height: 70px;
+    background-color: #FFFFFF;
 
 }
 
@@ -28,15 +29,12 @@ header a{
     display: flex;
     align-items: center;
     font-size: 10px;
-    margin-right:0px;
-    left: 0;
-    top: 0;
-    float: left;
 }
 
 .logo img{
-    width: 10%;  
+    width: 29px;  
     align-items: center;
+
 }
 
 /*Headermenu */
@@ -50,7 +48,8 @@ menu{
     align-items: center;
     justify-content: space-between;
     font-weight: 40;
-    padding-right: 40px;
+    padding: 30px 20px;
+
     
 }
 
@@ -72,16 +71,103 @@ button{
 }
 
 
-/* Footer*/
 
-footer{
+@media(max-width: 1027px) {
+main{
+    background:#595fcf;
+}
+    header{
+    flex-direction: column;
+    padding: 10px 0;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    .botoneslogin{
+    padding: 1px 0;
+    }
+    .logo{
+    display: column;
+    align-items: center;
+    font-size: 10px;
+    }
+    .menu-link{
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 5px;
+
+    ;
+    }
+    .menu{
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 40;
+            margin: 0px;
+    }
+    .itemsfooter{
+            display: column;
+    }
+}
+
+.logobanner{
+    width: 20%;
+}
+
+article{
+    padding: 30px 50px;
+    text-align: center;
     display: flex;
+
+}
+.contenedor-article{
     background-color: #9B9EE2;
-    justify-content: space-between;
-    color: #FFFFFF;
+    display: column;
+    padding: 30px;
+    align-items: flex-end;
+    border-color: #FFFFFF;
+    ;
+
+}
+
+section{
+    background-color: #9B9EE2;
+    display: column;
+    text-align: center!important;
+    align-items: flex-end;
     
+
 }
 
 
+.mensajeinicio{
+    background-color: #FFFFFF;
+}
+
+.contenedor{
+    background-color: #595fcf;
+}
+
+
+
+
+
+/* Footer*/
+.logo-textofoot{
+display: column;
+
+}
+.itemsfooter{
+    background-color: #9B9EE2;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+}
+
+.logofooter{
+    align-items: center;
+}
 
 
