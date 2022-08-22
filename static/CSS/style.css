@@ -2,12 +2,19 @@ body{
     margin: 0;
     background-color: #ffffff;
 }
-
+a{
+    text-decoration: none;
+}
+div{
+    position: relative;
+}
 h1{
     font-size: 70px;
     float: unset;
     color: #FFFFFF;
     margin: 0;
+    padding: 0px 70px;
+    white-space: nowrap;
 }
 
 /* Header*/
@@ -69,21 +76,53 @@ button{
 
 }
 
-
 /*main*/
 
 .logobanner{
     width: 40%;
 }
-
+.centro-banner{
+text-align: center;
+z-index: 35;
+}
 .fotosbanner{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #9B9EE2;
+    background-color:#9B9EE2;
+    justify-content: center;
 
 }
+.fotosbannergrupo1 {
+    z-index: 15;
+    align-items: center;
+    display: flex;
+    right: -500px
+}
 
+.fotosbannergrupo2{
+    z-index: 20;
+    align-items: center;
+    display: flex;
+    left: -500px
+}
+
+.triangulo1{
+    margin: 0;
+    width: 0px;
+    border: 240px solid transparent;
+    border-right-color:#9B9EE2;
+    left: -480px;
+    z-index: 25;
+
+
+}
+.triangulo2{
+    margin: 0;
+    width: 0px;
+    border: 240px solid transparent;
+    border-left-color:#9B9EE2;
+    right: -480px;
+    z-index: 30;
+}
 
 
 /*main.centro*/
@@ -136,7 +175,6 @@ section{
 
 }
 
-
 .mensajeinicio{
     background-color: #FFFFFF;
 }
@@ -149,6 +187,11 @@ section{
     color: #FFFFFF;
     font-size:42px;
     text-align: center;
+}
+
+.rectangulo{
+    
+color: #FFFFFF;
 }
 
 /* Footer*/
@@ -201,7 +244,6 @@ div.logo-textofoot{
                     font-weight: 40;
                     margin: 0px;
             }
-
             .contenedor{
             flex-direction: column;
             margin-right: auto;
