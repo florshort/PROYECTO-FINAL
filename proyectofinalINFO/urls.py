@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('login/', auth_views.LoginView.as_view(template_name = "login.html") , name= "login" ),
-    path('formulario/', views.formulario, name = 'formulario')
+    path('formulario/', views.formulario, name = 'formulario'),
+    path('quienes_voluntariado/', views.quienes_voluntariado, name = 'quienes_voluntariado'),
 ]
