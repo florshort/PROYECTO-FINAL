@@ -1,10 +1,20 @@
 body{
     margin: 0;
+    background-color: #ffffff;
 }
-
+a{
+    text-decoration: none;
+}
+div{
+    position: relative;
+}
 h1{
-    font-size: 50;
+    font-size: 70px;
     float: unset;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0px 70px;
+    white-space: nowrap;
 }
 
 /* Header*/
@@ -12,9 +22,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    padding: 10px;
-
+    min-height: 70px;
+    background-color: #FFFFFF; 
 }
 
 header a{
@@ -28,15 +37,12 @@ header a{
     display: flex;
     align-items: center;
     font-size: 10px;
-    margin-right:0px;
-    left: 0;
-    top: 0;
-    float: left;
 }
 
 .logo img{
-    width: 10%;  
+    width: 29px;  
     align-items: center;
+
 }
 
 /*Headermenu */
@@ -50,8 +56,7 @@ menu{
     align-items: center;
     justify-content: space-between;
     font-weight: 40;
-    padding-right: 40px;
-    
+    padding: 30px 20px;
 }
 
 /*Headerbotones */
@@ -71,17 +76,180 @@ button{
 
 }
 
+/*main*/
 
-/* Footer*/
-
-footer{
+.logobanner{
+    width: 40%;
+}
+.centro-banner{
+text-align: center;
+z-index: 35;
+}
+.fotosbanner{
     display: flex;
-    background-color: #9B9EE2;
-    justify-content: space-between;
-    color: #FFFFFF;
-    
+    background-color:#9B9EE2;
+    justify-content: center;
+
+}
+.fotosbannergrupo1 {
+    z-index: 15;
+    align-items: center;
+    display: flex;
+    right: -500px
+}
+
+.fotosbannergrupo2{
+    z-index: 20;
+    align-items: center;
+    display: flex;
+    left: -500px
+}
+
+.triangulo1{
+    margin: 0;
+    width: 0px;
+    border: 240px solid transparent;
+    border-right-color:#9B9EE2;
+    left: -480px;
+    z-index: 25;
+
+
+}
+.triangulo2{
+    margin: 0;
+    width: 0px;
+    border: 240px solid transparent;
+    border-left-color:#9B9EE2;
+    right: -480px;
+    z-index: 30;
 }
 
 
+/*main.centro*/
+article{
+    padding: 30px 50px;
+    text-align: center;
+    margin: 30px 40px
+
+    ;
+}
+div.donacionesvoluntariado {
+    background-color: #4d51c3;
+    margin: 0
+
+    ;
+}
+div.donacionesvoluntariado button{
+    background-color: #41CBF6;
+    align-items: center
+    ;
+}
 
 
+h3{
+    background-color: #4d51c3;
+    margin: 0;
+}
+.contenedor a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #9B9EE2;
+    font-size: 40px;
+    padding: 40px 40px;
+}
+.contenedor p{
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin: 0;
+}
+
+section{
+    background-color: #9B9EE2;
+    display: column;
+    text-align: center!important;
+    align-items: flex-end;
+    margin: 0;
+    
+
+}
+
+.mensajeinicio{
+    background-color: #FFFFFF;
+}
+
+.contenedor{
+    background-color: #595fcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size:42px;
+    text-align: center;
+}
+
+.rectangulo{
+    
+color: #FFFFFF;
+}
+
+/* Footer*/
+div.logo-textofoot{
+    display: column;
+
+}
+.itemsfooter{
+    background-color: #9B9EE2;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+}
+
+.logofooter{
+    align-items: center;
+    display: column;
+}
+
+@media(max-width: 1027px) {
+    main{
+            background:#595fcf;
+            }
+            header{
+            flex-direction: column;
+            padding: 10px 0;
+            margin-right: auto;
+            margin-left: auto;
+            }
+            .botoneslogin{
+            padding: 1px 0;
+            }
+            .logo{
+            display: column;
+            align-items: center;
+            font-size: 10px;
+            }
+            .menu-link{
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 30px 5px;
+            }
+            .menu{
+                    align-items: center;
+                    justify-content: space-between;
+                    font-weight: 40;
+                    margin: 0px;
+            }
+            .contenedor{
+            flex-direction: column;
+            margin-right: auto;
+            margin-left: auto;
+            }
+            .itemsfooter{
+                    display: column;
+            }
+            }
